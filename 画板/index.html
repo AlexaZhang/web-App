@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<div class="header">
+
+          <!-- 选择颜色 -->
+    <div class="ColorBlock">
+        <span class='tb'><img src="images/调色板.png" alt=""></span>
+        <div id='color'></div>
+        <div class="mode">
+            <ul>
+                       <li class="black"></li>
+                       <li class='red'></li>
+                       <li class='green'></li> 
+                       <li class='blue'></li>
+                       <li class='brown'></li>
+                       <li class='gold'></li>
+                       <li class='gray'></li>
+                       <li class='orange'></li>
+                       <li class='yellow'></li>
+                       <li class='wheat'></li>
+                       <li class='pink'></li>
+                       <li class='white'></li>
+                       <li class='Violet'></li>
+                       <li class='Magenta'></li>
+                       <li class='Cyan'></li>
+            </ul>   
+        </div>
+    </div>
+
+    <div class="zt">
+        <span class="span1"><img src="images/字体.png" alt="字体"></span>
+        <select style="height: 26px;" id="font_family">
+            <option>宋体</option>
+            <option>黑体</option>
+            <option>微软雅黑</option>
+            <option>新宋体</option>
+            <option>新细明体</option>
+            <option>仿宋</option>
+            <option>楷体</option>
+            <option>仿宋_GB2312</option>
+            <option>楷体_GB2312</option>
+            <option>cursive</option>
+            <option>fantasy</option>
+            <option>monospace</option>
+        </select>
+        <span class="span2"><img src="images/字体大小.png" alt="字体大小"></span>
+        <select style="height: 26px;" id="font_size">
+                        <option>16</option>
+                        <option>18</option>
+                        <option>20</option>
+                        <option>22</option>
+                        <option>24</option>
+                        <option>26</option>
+                        <option>28</option>
+                        <option>30</option>
+                        <option>32</option>
+                        <option>34</option>
+                        <option>36</option>
+                        <option>38</option>
+                        <option>40</option>
+                        <option>42</option>
+                        <option>44</option>
+                        <option>46</option>
+                        <option>48</option>
+                        <option>50</option>
+                        <option>52</option>
+                        <option>54</option>
+                        <option>56</option>
+                        <option>58</option>
+                        <option>60</option>
+                        <option>62</option>
+                        <option>64</option>
+                        <option>66</option>
+                        <option>68</option>
+                        <option>70</option>
+                        <option>72</option>
+                        <option>74</option>
+                        <option>76</option>
+                        <option>78</option>
+                        <option>80</option>
+        </select>
+    </div>
+  
+</div>
+ <div id="txt"></div> 
+        <!-- 画布 -->
+    <canvas width="1280" height="635">
+           
+    </canvas>
+
+    <div id="controls">
+        
+        <!-- 工具 -->
+      <div id="shape">
+            <ul >
+                <li id="pencil">
+                    <a href="#">
+                        <img src="images/画笔.png" alt="铅笔">
+                    </a>
+                </li>
+                <li id="straightLine">
+                    <a href="#">
+                        <img src="images/直线.png" alt=" 直线">
+                    </a>
+                </li> 
+                <li id='rectangle'>
+                    <a href="#">
+                        <img src="images/矩形空心.png" alt="矩形">
+                    </a>
+                </li>
+                <li id="polygon">
+                    <a href="#">
+                        <img src="images/多边形空心.png" alt="多边形">
+                    </a>
+                    <div class='xuanbian'>
+                        <section id="sides">
+                            <label for="side" class="label">边数</label>
+                            <input type="number" id="side" value="3" min="3" max="20">
+                        </section>
+                        
+                    <section id="widths">
+                        <label for="color" class="label">线宽</label>
+                        <input type="number" id="width" value="2" step="2" min="2" max="20">
+                    </section>
+                    <section id="styles">
+                        <label for="shape" class="label">方式</label>
+                        <select id="style">
+                            <option value="stroke">描边</option>
+                            <option value="fill">填充</option>
+                        </select>
+                    </section>
+                </div>
+                </li>
+
+                <li id='Hollow'>
+                    <a href="#">
+                        <img src="images/圆空心.png" alt="空心圆">
+                    </a>
+                </li>
+                <li id="Eraser">
+                    <a href="#">
+                        <img src="images/橡皮擦.png" alt="橡皮擦">
+                    </a>
+                </li>
+            </ul>
+      <!-- 选择线条 线宽 -->
+      </div>
+
+    <input type="button" value="" id="redo">
+    <input type="button" value="" id="save">
+    <input type="button" value="" id="qingkong">
+
+
+    <script src='index.js'></script>
+    <script src='jquery-1.8.3.min.js'></script>
+    <script>
+        $(function(){
+  $('#txt').html('<textarea name="t1" cols="80" rows="8"></textarea>');
+});
+    </script>
+</div>
+</body>
+</html>

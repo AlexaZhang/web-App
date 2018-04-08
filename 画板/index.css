@@ -1,0 +1,281 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+canvas {
+    background:#fff;
+    display:block;
+    margin-left:61px;
+}
+#controls {
+    width:59px;
+    height:635px;
+    position:absolute;
+    left:0;
+    top:40px;
+    border-right: 1px solid #aaaaaa;
+    background-color:#d6d6d6;
+    user-select:none;
+
+}
+.header{
+        width: 100%;
+        height: 40px;
+        background-color: #d6d6d6;
+        position: relative;
+        border-bottom: 1px solid #aaaaaa;
+}
+.header .ColorBlock{
+   width: 80px;
+    height: 40px;
+    margin-left:300px;
+}
+.header .ColorBlock .tb{
+  display: block;
+  width: 40px;
+  height: 35px; 
+  float: left;  
+}  
+.header .ColorBlock .tb img{
+    display: block;
+    width: 30px;
+    height: 31px;
+    padding-top: 5px;
+}
+#color{
+    width: 25px;
+    height: 25px;
+    background-color:#000000 ;
+    float:right;
+      margin-top:9px;
+}
+.mode{
+    width:212px;
+    height:130px;
+    background-color:#d6d6d6;
+    position: absolute;
+    top:40px;
+    left:250px; 
+    border-bottom:1px solid #aaaaaa;
+    border-left:1px solid #aaaaaa ;
+    border-right: 1px solid #aaaaaa;
+    display: none;
+
+}
+.mode ul{
+    height:100%;
+}
+.mode ul li{
+        list-style-type: none;
+        width: 25px;
+        height: 25px;
+        float: left;
+        margin: 8px;
+
+}
+.mode ul .black{
+    background-color:#000000 ;
+}
+
+.mode ul .red{
+    background-color:#FF0000; 
+}
+.mode ul .green{
+    background-color:#008000; 
+}
+.mode ul .blue{
+     background-color:#0000FF; 
+}
+.mode ul .brown{
+     background-color:#A52A2A;
+}
+.mode ul .gold{
+    background-color:#FFD700;
+}
+.mode ul .gray{
+    background-color:#808080;
+}
+.mode ul .orange{
+    background-color:#FFA500;
+}
+.mode ul .yellow{
+     background-color:#FFFF00;
+}
+.mode ul .wheat{
+     background-color:#F5DEB3;
+}
+.mode ul .pink{
+     background-color:#FFA500;
+}
+.mode ul .white{
+     background-color:#FFFFFF;
+}
+.mode ul .Violet{
+    background-color:#EE82EE;
+}
+.mode ul .Magenta{
+     background-color:#FF00FF;
+}
+.mode ul .Cyan{
+    background-color:#00FFFF;
+}
+.header .zt{
+  width:239px;
+  height:33px;
+  position: absolute;
+  top: 0px;
+  left:0px;
+  padding-top: 1px;
+  padding-left: 14px;  
+}
+.header .zt .span1{
+    display: block;
+    float: left;
+
+}
+.header .zt .span1 img{
+    width: 35px;
+    height: 35px;
+    display: block;
+    margin-top: 3px;
+}
+.header .zt #font_family{
+    float:left;
+    margin-left: 5px;
+    margin-top: 6px;
+}
+.header .zt .span2{
+    display: block;
+    float: left;
+}
+.header .zt .span2 img{
+    width: 35px;
+    height: 35px;
+    display: block;
+    margin-left: 8px;
+    padding: -4px;
+}
+.header .zt #font_size{
+    float:left;
+    margin-left: 8px;
+    margin-top: 6px
+
+}
+#controls section {
+    margin-top:10px;
+    height:20px;
+}
+#controls .label {
+    width:50%;
+    height:20px;
+    line-height:20px;
+    text-align:center;
+    display:block;
+    float:left;
+}
+#shape{
+    position: relative;
+}
+#shape ul{
+    background-color:  #d6d6d6;
+}
+
+#shape ul li{
+    list-style-type: none;
+    margin-top: 20px;
+}
+#shape ul li a{
+    display: block;
+    text-align:center;
+}
+#shape ul li a img{
+    width:30px;
+    height:30px;
+    display:block;
+    margin: 0 auto;
+}
+    
+#controls .color {
+    width:50%;
+    height:auto;
+    float:right;
+}
+#colors input {
+    float:right;
+    width:48%;
+    height:20px;
+    border:none;
+}
+#widths input {
+    float:right;
+    width:49%;
+    height:20px;
+    border:none;
+}
+#sides input {
+    float:right;
+    width:49%;
+    height:20px;
+    border:none;
+}
+#style {
+    float:right;
+    width:49%;
+    height:20px;
+    border:none;
+}
+input[type=button] {
+    width:30px;
+    height:30px;
+    color:red;
+    border-radius:5px;
+    margin-top:30px;
+    margin-left:14px;
+    border:none;
+    display:block;
+ }  
+option[value="eraser"]{
+    border: 1px solid red;
+}
+#qingkong{
+     background-image:url(images/laji.png);
+    background-repeat:no-repeat;
+    background-size: 30px,30px;
+
+}
+#redo{
+    background-image:url(images/chexiao.png);
+    background-repeat:no-repeat;
+    background-size: 30px,30px;
+}
+#save{
+    background-image:url(images/baochun.png);
+    background-repeat:no-repeat;
+    background-size: 30px,30px;
+}
+input{ 
+    border:1px solid #aaaaaa;
+    outline:none; 
+}
+.xuanbian{
+    width: 100px;
+    border-right: 1px solid #aaaaaa;
+    border-top: 1px solid #aaaaaa;
+    border-bottom: 1px solid #aaaaaa;
+    background-color: #d6d6d6;
+    position: absolute;
+    top: 141px;
+    left: 59px;
+    display: none;
+}
+canvas{
+    position: relative;
+
+
+}
+#txt{
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    z-index: 100;
+}
